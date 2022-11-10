@@ -8,13 +8,16 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import {SplitText} from "./splitText"
 import { isactive } from "./activeMenu"
 import Image from "next/image"
+import { useRouter } from 'next/router'
 gsap.registerPlugin(ScrollTrigger);
 function Menu(props){
     console.log(Link)
     let menu = useRef()
     let gg = useRef()
-    let h = 0
+    const router = useRouter()
+    let h = router.pathname
 
+  
     let [menuEn] = useState([`ABOUT`,`PORTFOLIO`,`SERVICE`,`BLOG`,`NEWS`,`CONTACT`])
     let toggle = useContext(isactive)
 

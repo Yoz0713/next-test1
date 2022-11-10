@@ -15,7 +15,7 @@ const svg = requireSvg.keys().map(requireSvg);
 const webp = requireWebp.keys().map(requireWebp);
 const webp2 = requireWebp2.keys().map(requireWebp2);
 console.log(svg)
-console.log(webp2)
+
     function Swiper1(){
         return (
             <Swiper
