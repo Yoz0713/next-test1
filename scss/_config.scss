@@ -803,24 +803,7 @@ button{
                     .menu-box{
                     
                         position: relative;
-                            .a{
-        
-                                &:after{
-                                    content: "";
-                                    display: block;
-                                    width: 7vw;
-                                    height: 7vw;
-                                   
-                                    background-repeat: no-repeat;
-                                    position: absolute;
-                                    right: -9vw;
-                                    top: 0;
-                                    opacity: 1;
-                                    transition: 0.5s;
-                                 
-                                  
-                                }
-                            }
+                          
                      
                         .ch_text{
                             text-align: center;
@@ -855,6 +838,26 @@ button{
                         }
     
         
+                    }
+                    .a{
+                        .ch_text{
+                            color: $gray_color;
+                        }
+                        &:after{
+                            content: "";
+                            display: block;
+                            width: 7vw;
+                            height: 7vw;
+                           
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            right: -9vw;
+                            top: 0;
+                            opacity: 1;
+                            transition: 0.5s;
+                         
+                          
+                        }
                     }
                     .menu-portfolio::after{
                         right: -1vw;
@@ -945,37 +948,20 @@ button{
                     padding: 1.6vw 0 0;
                     
                     .menu-box{
-                    
+                      
                         position: relative;
-                            .a{
-        
-                                &:after{
-                                    content: "";
-                                    display: block;
-                                    width: 7vw;
-                                    height: 7vw;
-                                   
-                                    background-repeat: no-repeat;
-                                    position: absolute;
-                                    right: -9vw;
-                                    top: 0;
-                                    opacity: 1;
-                                    transition: 0.5s;
-                                 
-                                  
-                                }
-                            }
+                            
                      
                         .ch_text{
                             text-align: center;
-                            font-size: 2.5vw;
+                            font-size: 4vw;
                             letter-spacing: 0.8vw;
-                            color: #f6f3ef;
+          
                             font-family: $title_word_family;
                         }
                         .en_text{
                             text-align: center;
-                            font-size:2vw;
+                            font-size:3.5vw;
                             color:$gray_color;
                             letter-spacing: 0.5vw;
                             font-family: $title_word_family;
@@ -999,6 +985,26 @@ button{
                         }
     
         
+                    }
+                    .a{
+                        .ch_text{
+                            color: $gray_color;
+                        }
+                        &:after{
+                            content: "";
+                            display: block;
+                            width: 7vw;
+                            height: 7vw;
+                           
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            right: -9vw;
+                            top: 0;
+                            opacity: 1;
+                            transition: 0.5s;
+                            filter: brightness(100);
+                          
+                        }
                     }
                     .menu-portfolio::after{
                         right: -1vw;
@@ -1168,7 +1174,7 @@ button{
                                     text-align: center;
                                     font-size: 4vw;
                                     letter-spacing: 0.8vw;
-                                    color: #f6f3ef;
+                                
                                     font-family: $title_word_family;
                                 }
                                 .en_text{
@@ -1183,6 +1189,11 @@ button{
                           
         
             
+                        }
+                        .a{
+                            .ch_text{
+                                color: $gray_color;
+                            }
                         }
                     }
               

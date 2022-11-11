@@ -702,18 +702,6 @@ button:hover img {
   .menu ul li .menu-box {
     position: relative;
   }
-  .menu ul li .menu-box .a:after {
-    content: "";
-    display: block;
-    width: 7vw;
-    height: 7vw;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -9vw;
-    top: 0;
-    opacity: 1;
-    transition: 0.5s;
-  }
   .menu ul li .menu-box .ch_text {
     text-align: center;
     font-size: 2.5vw;
@@ -744,6 +732,21 @@ button:hover img {
     opacity: 1;
     -webkit-animation: updown 2s linear forwards infinite;
             animation: updown 2s linear forwards infinite;
+  }
+  .menu ul li .a .ch_text {
+    color: #7d7d7d;
+  }
+  .menu ul li .a:after {
+    content: "";
+    display: block;
+    width: 7vw;
+    height: 7vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -9vw;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
   }
   .menu ul li .menu-portfolio::after {
     right: -1vw;
@@ -817,28 +820,15 @@ button:hover img {
   .menu ul li .menu-box {
     position: relative;
   }
-  .menu ul li .menu-box .a:after {
-    content: "";
-    display: block;
-    width: 7vw;
-    height: 7vw;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -9vw;
-    top: 0;
-    opacity: 1;
-    transition: 0.5s;
-  }
   .menu ul li .menu-box .ch_text {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 4vw;
     letter-spacing: 0.8vw;
-    color: #f6f3ef;
     font-family: "Noto Serif TC", serif;
   }
   .menu ul li .menu-box .en_text {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3.5vw;
     color: #7d7d7d;
     letter-spacing: 0.5vw;
     font-family: "Noto Serif TC", serif;
@@ -859,6 +849,22 @@ button:hover img {
     opacity: 1;
     -webkit-animation: updown 2s linear forwards infinite;
             animation: updown 2s linear forwards infinite;
+  }
+  .menu ul li .a .ch_text {
+    color: #7d7d7d;
+  }
+  .menu ul li .a:after {
+    content: "";
+    display: block;
+    width: 7vw;
+    height: 7vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -9vw;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+    filter: brightness(100);
   }
   .menu ul li .menu-portfolio::after {
     right: -1vw;
@@ -1002,7 +1008,6 @@ button:hover img {
     text-align: center;
     font-size: 4vw;
     letter-spacing: 0.8vw;
-    color: #f6f3ef;
     font-family: "Noto Serif TC", serif;
   }
   .menu ul .menu-box a .en_text {
@@ -1011,6 +1016,9 @@ button:hover img {
     color: #7d7d7d;
     letter-spacing: 0.5vw;
     font-family: "Noto Serif TC", serif;
+  }
+  .menu ul .a .ch_text {
+    color: #7d7d7d;
   }
   .is-active {
     left: 0;

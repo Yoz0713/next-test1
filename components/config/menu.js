@@ -96,6 +96,7 @@ function Menu(props){
         <div className={`menu ${toggle.menuToggle? "is-active2":null}` }ref={menu}>
             <ul>
                 <li className={h === "/" ? "menu-logo a" : "menu-logo"} onClick={()=>{
+               
                   let getJSON = async(url) => {
                     let response = await fetch(url,{method:"GET"});
                     let JSON = await response.json();
@@ -104,7 +105,9 @@ function Menu(props){
                 
                 getJSON("https://jsonplaceholder.typicode.com/posts/1")
                 }}>
-                        <Link href="/">
+                        <Link href="/" onClick={()=>{
+                            toggle.setMenuToggle(toggle.menuToggle = !toggle.menuToggle)
+                        }}>
                         <Image src={logo1} alt=""/>
                         <Image src={logo2} alt="" className="star"/>
                   
@@ -112,7 +115,9 @@ function Menu(props){
                 </li>
                 <li>
                         <div className={h === "/about" ? "menu-box a" : "menu-box"}>
-                                <Link href="./about">
+                                <Link href="./about" onClick={()=>{
+                            toggle.setMenuToggle(toggle.menuToggle = !toggle.menuToggle)
+                        }}>
                                 <h3 className="ch_text">關於典長</h3>
                                 <p className="en_text"><SplitText word={menuEn[0]}/></p>
                                 </Link>
@@ -121,7 +126,9 @@ function Menu(props){
                     </li>
                     <li>
                     <div className={h === "/portfolio"? "menu-box a" : "menu-box"}>
-                                <Link href="./portfolio">
+                                <Link href="./portfolio" onClick={()=>{
+                            toggle.setMenuToggle(toggle.menuToggle = !toggle.menuToggle)
+                        }}>
                                 <h3 className="ch_text">新作鑑賞</h3>
                                 <p className="en_text"><SplitText word={menuEn[1]}/></p>
                                 </Link>
